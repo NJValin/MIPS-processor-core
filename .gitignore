@@ -5,9 +5,17 @@
 !sim/
 !blocks/
 !top/
+!.utils/
 
 # Allow files within the allowed directories
 !sim/*
 !blocks/*
 !top/*
+!.utils/*
 
+# Don't push virtual environment
+.utils/venv
+.utils/venv/*
+
+# push the project start script
+!proj.sh
